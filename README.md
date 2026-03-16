@@ -1,41 +1,75 @@
-
 Project Overview
 
-Predict whether a person is at risk of heart disease using medical attributes like age, cholesterol, blood pressure, and more. Early detection can help in timely healthcare intervention.
+This project aims to predict whether a person is at risk of heart disease using various medical attributes such as age, cholesterol level, blood pressure, and other health indicators. Early detection of heart disease can help healthcare professionals and individuals take preventive measures and enable timely medical intervention.
 
-Dataset Includes medical info of patients:
+Dataset
 
-Age
-Sex
-Chest pain type
-Blood pressure
-Cholesterol
-Maximum heart rate
-Fasting blood sugar
-Exercise induced angina
+The dataset contains medical information of patients used to train the machine learning model. Important features include:
+
+Age – Age of the patient
+
+Sex – Gender of the patient
+
+Chest Pain Type – Type of chest pain experienced
+
+Resting Blood Pressure – Blood pressure measured at rest
+
+Cholesterol – Serum cholesterol level
+
+Maximum Heart Rate – Maximum heart rate achieved during exercise
+
+Fasting Blood Sugar – Indicates whether fasting blood sugar is above normal level
+
+Exercise Induced Angina – Presence of chest pain during exercise
+
+These attributes help the model learn patterns associated with heart disease risk.
+
 Technologies Used
 
-Python
-Pandas, NumPy
-Scikit-learn
-Streamlit for web app
-Matplotlib / Seaborn (for EDA)
+The project is implemented using the following technologies:
+
+Python – Programming language used for development
+
+Pandas & NumPy – Data manipulation and numerical computation
+
+Scikit-learn – Machine learning model development and evaluation
+
+Streamlit – Building an interactive web application for prediction
+
+Matplotlib & Seaborn – Data visualization and exploratory data analysis (EDA)
+
 Workflow
 
-Data loading & cleaning
-Encoding categorical variables
-Feature scaling (optional)
-Train-test split
-Model training (Logistic Regression)
-Model evaluation (Accuracy, Precision, Recall, F1, Confusion Matrix)
-Streamlit web app for prediction
+The machine learning pipeline follows these steps:
+
+Data Loading and Cleaning – Importing the dataset and handling missing or inconsistent values.
+
+Encoding Categorical Variables – Converting categorical features into numerical format.
+
+Feature Scaling (Optional) – Normalizing numerical features for better model performance.
+
+Train-Test Split – Splitting the dataset into training and testing sets.
+
+Model Training – Training a Logistic Regression model on the dataset.
+
+Model Evaluation – Evaluating performance using metrics such as Accuracy, Precision, Recall, F1 Score, and Confusion Matrix.
+
+Web Application Development – Creating a Streamlit-based web interface where users can input health parameters and receive predictions.
+
 Features
 
-Input patient info in a web form
-Predict high/low risk of heart disease
-Shows prediction confidence
+User-friendly web interface for entering patient health data
+
+Machine learning prediction for heart disease risk (High / Low)
+
+Displays prediction confidence
+
+Interactive Streamlit web application
+
 Future Improvements
 
-Add advanced models like Random Forest or XGBoost
-Hyperparameter tuning
-Full deployment with user authentication
+Implement advanced models such as Random Forest, Gradient Boosting, or XGBoost
+
+Perform hyperparameter tuning to improve model accuracy
+
+Deploy the application on the cloud with user authentication and secure access
